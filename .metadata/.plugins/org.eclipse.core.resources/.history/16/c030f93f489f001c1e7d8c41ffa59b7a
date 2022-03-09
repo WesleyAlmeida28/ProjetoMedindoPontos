@@ -1,0 +1,36 @@
+
+public class ClassMain {
+
+	public static void main(String[] args) {
+		Ponto pontoA = new Ponto(7, 9);
+		Ponto pontoB = new Ponto(0, 4);
+
+		boolean Igualdade = pontoA.SãoIguais(5, 3);
+		System.out.println(Igualdade);
+
+		boolean Igualdade2 = pontoA.SãoIguais2(pontoB);
+		System.out.println(Igualdade2);
+
+	}
+
+	
+
+	public double calcularDistancia(int x, int y) {
+		int x1 = this.x;
+		int y2 = this.y;
+		
+		this.x = x;
+		this.y = y;
+		
+		double pontoA = x1 - this.x;
+		double pontoB = y1 - this.y;
+		
+		double resultadoPontoA = Math.pow(pontoA, 2);
+		double resultadoPontoB = Math.pow(pontoB,2);
+		
+		double Distancia = Math.sqrt(resultadoPontoB + resultadoPontoA);
+		
+		return Resultado;
+	}
+
+}

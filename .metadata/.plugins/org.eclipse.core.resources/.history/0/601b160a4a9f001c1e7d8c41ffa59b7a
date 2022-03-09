@@ -1,0 +1,78 @@
+
+public class Ponto {
+
+	private int x;
+	private int y;
+
+	// Construtor que recebe por parametro dois numeros inteiros x e y
+	// respectivamente.
+	public Ponto(int x, int y) {
+		this.x = x;
+		this.y = y;
+	}
+
+	// Construtor que não recebe nada por parametro mas seus valores são
+	// inicializados em 0
+	public Ponto() {
+		this.x = 0;
+		this.y = 0;
+	}
+
+	// Aqui temos um metodo para verificar se os numeros de cada ponto são iguais.
+	// passando os numeros na chamada do método como parametro.
+
+	public boolean SãoIguais(int x, int y) {
+		if (this.x == x && this.y == y) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
+	// Metodo para comparar igualdade dos pontos passando
+	// o construtor proprio ponto como parametro usando numeros passado na chamada.
+
+	public boolean SãoIguais2(Ponto ponto) {
+		if (this.x == ponto.x && this.y == ponto.y) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
+	public double calcularDistancia(int x, int y) {
+		int x1 = this.x;
+		int y1 = this.y;
+
+		this.x = x;
+		this.y = y;
+
+		double pontoA = x1 - this.x;
+		double pontoB = y1 - this.y;
+
+		double resultadoPontoA = Math.pow(pontoA, 2);
+		double resultadoPontoB = Math.pow(pontoB, 2);
+
+		double Distancia = Math.sqrt(resultadoPontoB + resultadoPontoA);
+
+		return Distancia;
+	}
+
+	public double calcularDistancia2(Ponto ponto) {
+
+		int x1 = ponto.x;
+		int y1 = ponto.y;
+		
+
+		double pontoA = x1 - ponto.x;
+		double pontoB = y1 - ponto.y;
+
+		double ResultadoPontoA = Math.pow(pontoA, 2);
+		double ResultadoPontoB = Math.pow(pontoB, 2);
+		double Distancia = Math.sqrt(ResultadoPontoB + ResultadoPontoA);
+		
+
+		return Distancia;
+	}
+
+}

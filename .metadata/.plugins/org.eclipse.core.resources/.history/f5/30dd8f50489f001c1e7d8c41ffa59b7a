@@ -1,0 +1,42 @@
+
+public class Ponto {
+
+	private int x;
+	private int y;
+
+	// Construtor que recebe por parametro dois numeros inteiros x e y
+	// respectivamente.
+	public Ponto(int x, int y) {
+		this.x = x;
+		this.y = y;
+	}
+
+	// Construtor que não recebe nada por parametro mas seus valores são
+	// inicializados em 0
+	public Ponto() {
+		this.x = 0;
+		this.y = 0;
+	}
+
+	// Aqui temos um metodo para verificar se os numeros de cada ponto são iguais.
+	// passando os numeros na chamada do método como parametro.
+
+	public boolean SãoIguais(int x, int y) {
+		if (this.x == x && this.y == y) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
+	// Metodo para comparar igualdade dos pontos passando
+	// o construtor proprio ponto como parametro usando numeros passado na chamada.
+
+	public boolean SãoIguais2(Ponto ponto) {
+		if (this.x == ponto.x && this.y == ponto.y) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+}

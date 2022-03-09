@@ -39,4 +39,43 @@ public class Ponto {
 			return false;
 		}
 	}
+
+	public double calcularDistancia(int x, int y) {
+		int x1 = this.x;
+		int y1 = this.y;
+
+		this.x = x;
+		this.y = y;
+
+		double pontoA = x1 - this.x;
+		double pontoB = y1 - this.y;
+
+		double resultadoPontoA = Math.pow(pontoA, 2);
+		double resultadoPontoB = Math.pow(pontoB, 2);
+
+		double Distancia = Math.sqrt(resultadoPontoB + resultadoPontoA);
+
+		return Distancia;
+	}
+
+	public double calcularDistancia(Ponto ponto) {
+
+		int x1 = ponto.x;
+		int y1 = ponto.y;
+		
+		ponto.x = x;
+		ponto.y = y;
+
+		
+
+		double pontoA = x1 - ponto.x;
+		double pontoB = y1 - ponto.y;
+
+		double ResultadoPontoA = Math.pow(pontoA, 2);
+		double ResultadoPontoB = Math.pow(pontoB, 2);
+		double Distancia = Math.sqrt(ResultadoPontoB + ResultadoPontoA);
+
+		return Distancia;
+	}
+
 }
