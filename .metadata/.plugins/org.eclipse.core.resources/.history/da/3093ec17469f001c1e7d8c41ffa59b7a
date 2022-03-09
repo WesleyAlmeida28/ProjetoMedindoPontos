@@ -1,0 +1,18 @@
+
+public class ClassMain {
+
+	public static void main (String[] args) {
+		Ponto pontoA = new Ponto (7,9);
+		Ponto pontoB = new Ponto (4,2);
+		System.out.println(pontoA + "Testando");
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+}

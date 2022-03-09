@@ -1,0 +1,20 @@
+
+public class ClassMain {
+
+	public static void main (String[] args) {
+		Ponto pontoA = new Ponto (7,9);
+		Ponto pontoB = new Ponto (0,4);
+		
+		boolean Igualdade = pontoA.SãoIguais2(pontoB);
+		System.out.println(Igualdade);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+}
