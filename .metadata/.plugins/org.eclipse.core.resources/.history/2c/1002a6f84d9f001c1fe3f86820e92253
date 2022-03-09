@@ -1,0 +1,14 @@
+public class ClassMain {
+	public static void main(String[] args) {
+		PontoAeB pontoA = new PontoAeB(5, 3);
+		PontoAeB pontoB = new PontoAeB(3, 2);
+		//boolean saoIguais = pontoA.verificarIgual(pontoB);
+		//boolean saoIguais2 = pontoA.verificarIgual(2, 2);
+		//System.out.println(saoIguais);
+		//System.out.println(saoIguais2);
+		double distancia = pontoA.calcularDistancia(pontoB);
+		System.out.println(distancia);
+		double distancia2 = pontoA.calcularDistancia(2, 2);
+		System.out.println(distancia2);
+	}
+}

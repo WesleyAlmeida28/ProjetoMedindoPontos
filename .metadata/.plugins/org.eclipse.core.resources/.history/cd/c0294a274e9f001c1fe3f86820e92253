@@ -1,0 +1,24 @@
+
+public class ClassMain {
+
+	public static void main(String[] args) {
+		PontoAeB pontoA = new PontoAeB(7, 9);
+		PontoAeB pontoB = new PontoAeB(0, 4);
+
+		//boolean Igualdade = pontoA.SãoIguais(5, 3);
+		//System.out.println(Igualdade);
+
+		//boolean Igualdade2 = pontoA.SãoIguais2(pontoB);
+		//System.out.println(Igualdade2);
+
+		
+		
+		double distancia2 = pontoA.calcularDistancia(0, 4);
+		System.out.println(distancia2);
+		
+		double distancia = pontoA.calcularDistancia(pontoB);
+		System.out.println(distancia);
+		
+	}
+
+}
