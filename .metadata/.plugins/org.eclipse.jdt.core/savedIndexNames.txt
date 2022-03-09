@@ -1,0 +1,2 @@
+INDEX VERSION 1.131+C:\Users\User\Documents\FACULDADE\CODIGOS\TESTES PTI E AULAS DE POO\PROJETOS PARA GITHUB\.metadata\.plugins\org.eclipse.jdt.core
+2422301837.index
