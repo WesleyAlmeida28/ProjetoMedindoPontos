@@ -30,9 +30,6 @@ public class Ponto {
 
 	}
 	
-	// Metodo para comparar igualdade dos pontos passando
-	// o construtor proprio ponto como parametro usando numeros passado na chamada.
-	
 	public boolean SãoIguais2 (Ponto ponto) {
 		if(this.x == ponto.x && this.y == ponto.y) {
 			return true; 
